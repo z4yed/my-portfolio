@@ -13,8 +13,14 @@ body {
     font-size: 50px;
 }
 
+.flex-item h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
 .flex-item h3 {
     font-size: 30px;
+    font-weight: 500;
 }
 
 .name {
@@ -33,6 +39,7 @@ body {
 
 .flex-item {
     width: 50%;
+    margin: 0 40px;
 }
 
 .flex-item img {
