@@ -1,3 +1,54 @@
 body {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.welcome {
+    background-image: url('images/top-banner.png');
+    background: red;
+}
+
+.flex-item h1 {
+    font-size: 50px;
+}
+
+.flex-item h3 {
+    font-size: 30px;
+}
+
+.name {
+    color: rgba(255, 178, 35, 0.911);
+}
+
+.flexible-container {
+    display: flex;
+    padding: 50px;
+}
+
+.head-section {
+    background-image: url(images/top-banner.png);
+    background-repeat: no-repeat;
+}
+
+.flex-item {
+    width: 50%;
+}
+
+.flex-item img {
+    width: 100%;
+}
+
+.flex-item p {
+    color: dimgray;
+}
+
+.link-button {
+    text-decoration: none;
+    background: linear-gradient(to left, orange , rgb(255, 95, 37));
+    padding: 10px 45px;
+    border-radius: 4px;
+    margin-top: 60px;
+    font-weight: 700;
+    color: white;
 }
