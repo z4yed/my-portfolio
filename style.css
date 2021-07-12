@@ -53,7 +53,7 @@ h3 {
 
 .link-button {
     text-decoration: none;
-    background: linear-gradient(to left, orange , rgb(255, 95, 37));
+    background: linear-gradient(to left, orange, rgb(255, 95, 37));
     padding: 10px 45px;
     border-radius: 4px;
     margin-top: 60px;
@@ -62,10 +62,9 @@ h3 {
 }
 
 #intern {
-    border-left: 5px solid ;
+    border-left: 5px solid;
     border-image: linear-gradient(to bottom, cyan, blue);
     border-image-slice: 1;
-
     padding: 20px;
     box-shadow: 5px 10px 40px dimgray;
     border-radius: 10px;
@@ -75,17 +74,21 @@ h3 {
     border-left: 5px solid;
     border-image: linear-gradient(to top, rgb(245, 142, 94), rgb(168, 0, 0));
     border-image-slice: 1;
-
     padding: 20px;
     box-shadow: 5px 10px 40px gray;
     border-radius: 10px;
-
 }
 
 .experience {
     background-image: url(images/exp-bg.png);
     background-repeat: no-repeat;
-    background-position: left ;
+    background-position: left;
+}
+
+.experience>h2:first-child {
+    font-weight: 550;
+    margin-left: 7%;
+    margin-bottom: -10px;
 }
 
 .big_dream {
@@ -96,4 +99,73 @@ h3 {
 
 footer p {
     text-align: center;
+}
+
+/* ------------------
+    Responsiveness 
+ -------------------*/
+
+/* For Mobile Devices */
+
+@media only screen and (max-width:688px) {
+    .flexible-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .flex-item {
+        margin: 10px 0;
+    }
+    
+    .flex-item img {
+        width: 120%;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 22px;
+        margin-top: 50px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .flex-item p {
+        text-align: justify;
+        padding-bottom: 30px;
+    }
+    .link-button:last-child {
+        padding: 10px 20px;
+    }
+    .big_dream {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .experience>h2:first-child {
+        text-align: center;
+        font-size: 24px;
+        margin: 30px 0px;
+        font-weight: 600;
+    }
+
+}
+
+/* for Tabs */
+@media only screen and (min-width: 689px) and (max-width: 922px) {
+    
+    .flexible-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 27px;
+    }
 }
